@@ -42,7 +42,7 @@ while True:
                 items_can_buy.append(key)
             try:
                 item_to_buy = items_can_buy[-1]
-            finally:
+            except IndexError:
                 pass
 
         """7. Buy the most expensive item in the list"""
